@@ -1,3 +1,3 @@
 # dot
 
-Repository contains customized dot files.
+Repository contains dot files.
