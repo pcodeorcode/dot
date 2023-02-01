@@ -18,5 +18,5 @@ alias ls="ls -G"
 alias firefox="open /Applications/Firefox\ Developer\ Edition.app/"
 
 #Prompt
-PS1='\e[0;29m${debian_chroot:+($debian_chroot)}\u@\h:\n\w\n\e[0;34m> '
+PS1='\e[0;29m${debian_chroot:+($debian_chroot)}\u@\h:\n\w\n\e[0;34m-> '
 
