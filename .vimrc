@@ -24,4 +24,3 @@ set ruler
 set noswapfile
 " error background color
 hi Error ctermfg=white ctermbg=111111
-" set termguicolors
