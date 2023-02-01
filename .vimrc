@@ -1,4 +1,3 @@
-
 " syntax highlighting on
 syntax on
 " hide styling characters
@@ -25,5 +24,4 @@ set ruler
 set noswapfile
 " error background color
 hi Error ctermfg=white ctermbg=111111
-" set termguicolors
 " set termguicolors
