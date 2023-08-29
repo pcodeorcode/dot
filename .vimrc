@@ -16,7 +16,7 @@ set expandtab
 set number
 " hide line numbers in markdown files
 au FileType markdown highlight LineNr ctermfg=black
-" hide line numbers in markdown files
+" set conceallevel to 0 for json files
 au FileType json set conceallevel=0
 " statusbar color
 hi StatusLine ctermbg=black ctermfg=white
