@@ -26,3 +26,5 @@ set ruler
 set noswapfile
 " error background color
 hi Error ctermfg=white ctermbg=111111
+" allow backspace
+set backspace=indent,eol,start
