@@ -56,8 +56,13 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+#if [ "$color_prompt" = yes ]; then
+#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;32m\]\w\[\033[00m\]\n$ '
+
+#branch() { git branch --show-current 2>/dev/null; }
+branch() { git branch 2>/dev/null; }
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n$ '
+    PS1="\$(branch)\n╔ ${debian_chroot:+($debian_chroot)}\u@\h:\w\n╚ $ "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -116,3 +121,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+alias lynx="lynx -accept-all-cookies"
+duck() { lynx "https://duckduckgo.com/lite/?q=$1"; }
+alias "?"=duck
